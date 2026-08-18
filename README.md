@@ -1,4 +1,5 @@
 # Chin Jin Ren — Software Developer Portfolio
+Vercel link: https://portfolio-beta-mauve-30.vercel.app/
 
 A single-page portfolio built with **React + Vite + TypeScript**, styled after your
 reference design (blue `#263BAA` / light blue `#D0E6FD` / cream `#FFF4D6` palette).
