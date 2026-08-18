@@ -1,0 +1,38 @@
+.footer {
+  background: var(--ink);
+  color: rgba(255, 244, 214, 0.75);
+  padding: 30px clamp(20px, 5vw, 64px) 40px;
+}
+
+.footer__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-top: 1px solid rgba(255, 244, 214, 0.15);
+  padding-top: 22px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.footer__name {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 18px;
+}
+
+.footer__socials a:hover {
+  color: var(--blue-tint);
+}
+
+.footer__note {
+  color: rgba(255, 244, 214, 0.5);
+}

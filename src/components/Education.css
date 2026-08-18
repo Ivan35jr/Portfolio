@@ -1,0 +1,162 @@
+.edu {
+  background: var(--blue-tint);
+  padding: 80px clamp(20px, 5vw, 64px) 100px;
+}
+
+.edu__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.edu__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.6vw, 2.2rem);
+  color: var(--ink);
+  margin-bottom: 64px;
+}
+
+.edu__title-accent {
+  color: var(--blue-soft);
+}
+
+.edu__timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 26px;
+}
+
+.edu__rail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--blue);
+}
+
+.edu__rail::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid var(--blue);
+}
+
+.edu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  position: relative;
+}
+
+.edu__drop {
+  position: absolute;
+  top: -26px;
+  width: 2px;
+  height: 26px;
+  background: var(--blue);
+}
+
+.edu__drop::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid var(--blue);
+}
+
+.edu__period {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 5px 14px;
+}
+
+.edu__school {
+  font-family: var(--font-display);
+  font-weight: 600;
+  background: var(--blue);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+}
+
+.edu__card {
+  margin-top: 6px;
+  background: var(--cream);
+  border-radius: 18px;
+  border: 2px solid transparent;
+  padding: 22px 20px;
+  text-align: left;
+  width: 100%;
+  box-shadow: 0 12px 28px rgba(38, 59, 170, 0.08);
+}
+
+.edu__item--current .edu__card {
+  border-color: var(--blue);
+}
+
+.edu__summary, .edu__cgpa {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.edu__course-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+
+.edu__courses {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.edu__courses li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.edu__courses li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
+
+@media (max-width: 860px) {
+  .edu__timeline {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .edu__rail {
+    display: none;
+  }
+  .edu__drop {
+    display: none;
+  }
+}
