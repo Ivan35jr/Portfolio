@@ -19,7 +19,13 @@ export default function Skills() {
                   <div>
                     <p className="skills__role">{e.role}</p>
                     <p className="skills__org">{e.org}</p>
-                    <p className="skills__summary">{e.summary}</p>
+                    <ul className="skills__summary">
+                      {e.summary.map((point, index) => (
+                        <li key={index}>
+                          <p>{point}</p>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </li>
               ))}

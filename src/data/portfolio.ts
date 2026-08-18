@@ -215,32 +215,37 @@ export const projects: Project[] = [
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "Java", "SQL"],
+    items: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "C++", "HTML", "CSS"],
   },
   {
     title: "Frameworks & Tools",
-    items: ["React", "Node.js", "Express", "Git", "Docker", "Figma"],
+    items: ["React", "Node.js", "Django", "Git", "Docker", "Figma", "VSCode", "IntelliJ"],
   },
   {
     title: "Concepts",
-    items: ["Data Structures", "REST APIs", "OOP", "Agile / Scrum", "Testing"],
+    items: ["Data Structures", "REST APIs", "OOP", "Agile / Scrum", "Testing", "Algorithms", "Artificial Intelligence"],
   },
 ];
 
 export const experience = [
   {
-    period: "2025",
+    period: "Jan 2025 - April 2025",
     role: "Software Engineering Intern",
-    org: "Add your company name",
-    summary:
-      "Placeholder role — replace with a short line on what you built, shipped, or improved.",
+    org: "GlobeOSS",
+    summary: [
+      "Improved data processing systems by handling millions of records in Elasticsearch and cleaning data with PySpark, making search results faster and more accurate.",
+      "Performed web scraping for the Department of Statistics Malaysia (DOSM) to gather useful information.",
+      "Designed reusable code modules that made development quicker and easier, helping future projects launch faster."
+    ]
   },
   {
-    period: "2024",
-    role: "Freelance Web Developer",
-    org: "Self-employed",
-    summary:
-      "Placeholder role — replace with a short line about the clients or projects you supported.",
+    period: "Jan 2023 - March 2023",
+    role: "Cybersecurity Intern",
+    org: "UOB",
+    summary: [
+      "Assisted in monthly Vulnerability Assessment and Penetration Testing (VAPT), identifying potential risks and ensuring compliance with internal security standards.",
+      "Compiled and analyzed VAPT reports, extracting key findings into structured Excel summaries to support management decision-making and remediation planning.",
+    ]
   },
 ];
 
